@@ -2,10 +2,10 @@ package counter;
 
 import java.util.stream.IntStream;
 
-public class Counter {
+public class MatrixCounter implements  GetData{
     private Integer matrixSize;
-    private Integer matrix[][];
-    public Counter(String data){
+    private Integer[][] matrix;
+    public MatrixCounter(String data){
         String mData[] = data.split(" ");
         this.matrixSize = Integer.parseInt(mData[0]);
         matrix= new Integer[matrixSize][matrixSize];

@@ -1,2 +1,5 @@
-package counter;public class GetData {
+package counter;
+
+public interface GetData {
+     String count();
 }
